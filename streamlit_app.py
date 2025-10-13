@@ -228,11 +228,7 @@ if st.button("Generate Portfolio") or "result" in st.session_state:
     unsafe_allow_html=True
 )
 
-    st.markdown(
-        f"<span style='color:#00FF00'>💡 In a typical year, your €{investment:,.0f} investment could fluctuate between "
-        f"€{lower_bound:,.0f} and €{upper_bound:,.0f}, based on portfolio volatility.</span>",
-        unsafe_allow_html=True
-)
+
 
 
 
