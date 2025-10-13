@@ -21,11 +21,14 @@ st.markdown(
         color: #00FF00 !important;
         text-shadow: 0 0 10px #00FF00;
     }
-
-thead tr th, tbody tr td {
+    thead th, 
+    tbody th, 
+    thead tr th, 
+    tbody tr td {
     font-family: 'Orbitron', sans-serif !important;
     color: #00FF00 !important;
 }
+
 
     /* Button styling */
     .stButton > button {
