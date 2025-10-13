@@ -63,6 +63,11 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+st.markdown(
+    "<h1 style='color:#00FF00; font-family: Georgia, serif;'>🧾 Generate My Portfolio</h1>",
+    unsafe_allow_html=True
+)
+
 @st.cache_data
 def load_returns():
     return pd.read_csv("returns_data.csv", index_col=0, parse_dates=True)
