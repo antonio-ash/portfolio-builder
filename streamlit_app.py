@@ -81,9 +81,6 @@ ticker_name_map = load_ticker_names()
 expected_annual_returns = returns_df.mean() * 12
 annualized_cov_matrix = returns_df.cov() * 12
 
-# Title
-st.title("📼 Generate My Portfolio")
-
 # Step 1: Certainty Equivalent
 st.markdown(
     """
