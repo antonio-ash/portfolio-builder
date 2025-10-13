@@ -184,8 +184,7 @@ if st.button("Generate Portfolio") or "result" in st.session_state:
         "Allocation (%)": ["{:.2f}%".format(w) for w in weights_percent.values]
     }).set_index("Ticker")
     # Convert DataFrame to styled HTML table
-    # Convert DataFrame to styled HTML table
-html_table = weights_named.to_html(index=True, classes='custom-table', border=0)
+    html_table = weights_named.to_html(index=True, classes='custom-table', border=0)
 
 st.markdown(
         """
