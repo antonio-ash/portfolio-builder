@@ -65,9 +65,9 @@ thead tr th, tbody tr td {
     color: #00FF00 !important;
     background-color: black !important;
     font-family: 'Orbitron', sans-serif !important;
+    }
     </style>
     """,
-}
     unsafe_allow_html=True
 )
 
