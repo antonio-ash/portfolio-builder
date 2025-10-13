@@ -213,8 +213,8 @@ if st.button("Generate Portfolio") or "result" in st.session_state:
         unsafe_allow_html=True
     )
 
-# === Display the table ===
-st.markdown(html_table, unsafe_allow_html=True)
+    # === Display the table ===
+    st.markdown(html_table, unsafe_allow_html=True)
 
 
 expected_return = result['Expected Return']
