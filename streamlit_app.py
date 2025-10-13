@@ -183,40 +183,9 @@ if st.button("Generate Portfolio") or "result" in st.session_state:
         "Ticker": final_weights.index,
         "Allocation (%)": ["{:.2f}%".format(w) for w in weights_percent.values]
     }).set_index("Ticker")
-    # Convert DataFrame to styled HTML table
-    html_table = weights_named.to_html(index=True, classes='custom-table', border=0)
-    st.markdown(
-        """
-        <style>
-        .custom-table {
-            width: 100%;
-            font-family: 'Orbitron', sans-serif;
-            color: #00FF00;
-            background-color: black;
-            border-collapse: collapse;
-            font-size: 16px;
-            margin-top: 20px;
-        }
 
-        .custom-table th, .custom-table td {
-            border: 1px solid #004400;
-            padding: 10px 14px;
-            text-align: left;
-            text-shadow: 0 0 4px #00FF00;
-        }
-
-        .custom-table thead {
-            background-color: #001100;
-        }
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
-
-    # === Display the table ===
-    st.markdown(html_table, unsafe_allow_html=True)
-
-
+    st.dataframe(weights_named)
+    
     expected_return = result['Expected Return']
     volatility = result['Volatility']
     st.markdown(
