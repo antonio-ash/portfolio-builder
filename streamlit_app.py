@@ -96,7 +96,7 @@ risk_score = min(max(risk_score, 0.01), 0.99)
 
 # Step 2: Number of stocks
 st.markdown(
-    "<span style="color:#00FF00; font-family: 'Orbitron', sans-serif;">🎯 How many stocks should your portfolio include?</span>"
+    <span style="color:#00FF00; font-family: 'Orbitron', sans-serif;">🎯 How many stocks should your portfolio include?</span>""",
     unsafe_allow_html=True
 )
 n_stocks = st.number_input("", min_value=5, max_value=100, value=30, step=1)
