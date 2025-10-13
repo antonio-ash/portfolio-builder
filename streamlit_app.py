@@ -2,8 +2,6 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-st.set_page_config(page_title="Build your own portfolio", layout="wide")
-
 # 💻 Green-on-black retro style
 st.markdown(
     """
