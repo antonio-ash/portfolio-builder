@@ -218,10 +218,10 @@ st.markdown(
 st.markdown(html_table, unsafe_allow_html=True)
 st.markdown(weights_named.to_html(escape=False, index=True, justify='center'), unsafe_allow_html=True)
 
-    expected_return = result['Expected Return']
-    volatility = result['Volatility']
+expected_return = result['Expected Return']
+volatility = result['Volatility']
     
-    st.markdown(
+st.markdown(
     f"""
     📈 <span style='color:#00FF00; font-family: Orbitron, sans-serif;'>
     <strong>Expected Return:</strong> {expected_return * 100:.2f}%
