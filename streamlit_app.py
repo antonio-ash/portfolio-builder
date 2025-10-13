@@ -69,7 +69,7 @@ st.markdown(
 )
 
 st.markdown(
-    "<h1 style='color:#00FF00; font-family: 'Orbitron', serif;'>🧾 Generate My Portfolio</h1>",
+    "<h1 style='color:#00FF00; font-family: 'Orbitron', serif;'>Generate My Portfolio</h1>",
     unsafe_allow_html=True
 )
 
@@ -171,7 +171,7 @@ if st.button("Generate Portfolio") or "result" in st.session_state:
     st.markdown(
     """
     <h2 style="color:#00FF00; font-family: 'Orbitron', sans-serif; text-shadow: 0 0 8px #00FF00;">
-    ✅ Recommended Portfolio Allocation
+    Recommended Portfolio Allocation
     </h2>
     """,
     unsafe_allow_html=True
