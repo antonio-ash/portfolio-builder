@@ -2,6 +2,36 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
+st.markdown(
+    """
+    <style>
+    /* === Apply Orbitron styling to the table === */
+
+    thead tr th, tbody tr td {
+        font-family: 'Orbitron', sans-serif !important;
+        color: #00FF00 !important;
+        background-color: black !important;
+        text-align: left !important;
+        text-shadow: 0 0 5px #00FF00 !important;
+    }
+
+    thead, tbody {
+        background-color: black !important;
+    }
+
+    [data-testid="stDataFrame"] .element-container {
+        border-radius: 0px !important;
+        border: none !important;
+    }
+
+    tbody tr {
+        border-bottom: 1px solid #003300 !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # 💻 Green-on-black retro style
 st.markdown(
     """
