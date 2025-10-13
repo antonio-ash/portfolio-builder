@@ -203,33 +203,34 @@ if st.button("Generate Portfolio") or "result" in st.session_state:
     """,
     unsafe_allow_html=True
 )
+        # Step 5: Investment projection
+    st.markdown("💰 <span style='color:#00FF00; font-family: Orbitron, sans-serif;'>How much would you like to invest? (€)</span>", unsafe_allow_html=True)
+    initial_investment = st.number_input("", min_value=1000, step=1000, value=10000)
 
-# Step 5: Investment projection
-st.markdown("💰 <span style='color:#00FF00; font-family: Orbitron, sans-serif;'>How much would you like to invest? (€)</span>", unsafe_allow_html=True)
-initial_investment = st.number_input("", min_value=1000, step=1000, value=10000)
+    # 5-year projection
+    future_value = initial_investment * (1 + expected_return) ** 5
 
-# 5-year projection
-future_value = initial_investment * (1 + expected_return) ** 5
+    # Compute return range using lognormal assumption
+    mu = result['Expected Return']
+    sigma = result['Volatility']
+    investment = initial_investment
 
-# Compute return range using lognormal assumption
-mu = result['Expected Return']
-sigma = result['Volatility']
-investment = initial_investment  # Make sure this is defined earlier
+    lower_bound = investment * np.exp(mu - sigma)
+    upper_bound = investment * np.exp(mu + sigma)
 
-lower_bound = investment * np.exp(mu - sigma)
-upper_bound = investment * np.exp(mu + sigma)
+    st.markdown(
+        f"""
+        📊 <span style='color:#00FF00; font-family: Orbitron, sans-serif;'>
+        Over 5 years, your investment could grow to <strong>€{future_value:,.0f}</strong>
+        </span><br>
+        📉 <span style='color:#00FF00; font-family: Orbitron, sans-serif;'>
+        Expected yearly range: <strong>€{lower_bound:,.0f} – €{upper_bound:,.0f}</strong>
+        </span>
+        """,
+        unsafe_allow_html=True
+    )
 
-st.markdown(
-    f"""
-    📊 <span style='color:#00FF00; font-family: Orbitron, sans-serif;'>
-    Over 5 years, your investment could grow to <strong>€{future_value:,.0f}</strong>
-    </span><br>
-    📉 <span style='color:#00FF00; font-family: Orbitron, sans-serif;'>
-    Expected yearly range: <strong>€{lower_bound:,.0f} – €{upper_bound:,.0f}</strong>
-    </span>
-    """,
-    unsafe_allow_html=True
-)
+
 
 
 
