@@ -6,28 +6,42 @@ import numpy as np
 st.markdown(
     """
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+    /* Import Orbitron from Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
 
+    /* Apply Orbitron to all main text */
     html, body, .stApp {
         background-color: black !important;
         color: #00FF00 !important;
         font-family: 'Orbitron', sans-serif !important;
     }
 
+    /* Title glow if desired */
+    h1 {
+        color: #00FF00 !important;
+        text-shadow: 0 0 10px #00FF00;
+    }
+
+    /* Button styling */
     .stButton > button {
         color: #00FF00 !important;
         background-color: black !important;
         border: 1px solid #00FF00 !important;
+        font-family: 'Orbitron', sans-serif !important;
     }
 
+    /* Number input boxes */
     .stNumberInput input {
         color: #00FF00 !important;
         background-color: black !important;
         border: 1px solid #00FF00 !important;
+        font-family: 'Orbitron', sans-serif !important;
     }
 
+    /* Slider handle text */
     .stSlider > div {
         color: #00FF00 !important;
+        font-family: 'Orbitron', sans-serif !important;
     }
 
     div[data-baseweb="slider"] > div:first-child {
@@ -43,7 +57,7 @@ st.markdown(
 )
 
 st.markdown(
-    "<h1 style='color:#00FF00; font-family: Georgia, serif;'>🧾 Generate My Portfolio</h1>",
+    "<h1 style='color:#00FF00; font-family: 'Orbitron', serif;'>🧾 Generate My Portfolio</h1>",
     unsafe_allow_html=True
 )
 
