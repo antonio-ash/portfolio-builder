@@ -188,8 +188,8 @@ if st.button("Generate Portfolio") or "result" in st.session_state:
         "Allocation (%)": ["{:.2f}%".format(w) for w in weights_percent.values]
     }).set_index("Ticker")
 
-    st.dataframe(weights_named)
-    
+    st.table(weights_named)
+
     expected_return = result['Expected Return']
     volatility = result['Volatility']
     st.markdown(
