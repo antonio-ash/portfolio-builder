@@ -24,10 +24,15 @@ st.markdown(
 
     /* Button styling */
     .stButton > button {
-        color: #00FF00 !important;
-        background-color: black !important;
-        border: 1px solid #00FF00 !important;
-        font-family: 'Orbitron', sans-serif !important;
+    color: #00FF00 !important;
+    background-color: black !important;
+    border: 1px solid #00FF00 !important;
+    font-family: 'Orbitron', sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    padding: 0.6em 1.5em !important;
+    text-transform: uppercase !important;
+    text-shadow: 0 0 8px #00FF00 !important;
     }
 
     /* Number input boxes */
