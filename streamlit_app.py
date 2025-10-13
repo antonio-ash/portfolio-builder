@@ -216,9 +216,7 @@ st.markdown(
 
 # === Display the table ===
 st.markdown(html_table, unsafe_allow_html=True)
-
-
-    st.markdown(weights_named.to_html(escape=False, index=True, justify='center'), unsafe_allow_html=True)
+st.markdown(weights_named.to_html(escape=False, index=True, justify='center'), unsafe_allow_html=True)
 
     expected_return = result['Expected Return']
     volatility = result['Volatility']
