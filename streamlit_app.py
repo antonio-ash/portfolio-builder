@@ -183,6 +183,8 @@ if st.button("Generate Portfolio") or "result" in st.session_state:
         "Ticker": final_weights.index,
         "Allocation (%)": ["{:.2f}%".format(w) for w in weights_percent.values]
     }).set_index("Ticker")
+    
+    st.dataframe(weights_named, use_container_width=True)
 
     st.markdown(weights_named.to_html(escape=False, index=True, justify='center'), unsafe_allow_html=True)
 
