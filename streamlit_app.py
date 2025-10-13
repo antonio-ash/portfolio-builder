@@ -202,7 +202,7 @@ if st.button("Generate Portfolio") or "result" in st.session_state:
 )
 
     # Step 5: Investment projection
-    st.markdown("💰 <span style='color:#00FF00'>How much would you like to invest? (€)</span>", unsafe_allow_html=True)
+    st.markdown("💰 <span style='color:#00FF00; font-family: Orbitron, sans-serif;'>How much would you like to invest? (€)</span>", unsafe_allow_html=True)
     initial_investment = st.number_input("", min_value=1000, step=1000, value=10000)
 
     # 5-year projection
