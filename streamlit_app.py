@@ -63,6 +63,11 @@ thead tr th, tbody tr td {
     }
     </style>
     """,
+    .stDataFrame div {
+    color: #00FF00 !important;
+    background-color: black !important;
+    font-family: 'Orbitron', sans-serif !important;
+}
     unsafe_allow_html=True
 )
 
