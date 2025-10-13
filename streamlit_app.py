@@ -161,7 +161,14 @@ if st.button("Generate Portfolio") or "result" in st.session_state:
         risk_score=risk_score
     )
 
-    st.subheader("✅ Recommended Portfolio Allocation")
+    st.markdown(
+    """
+    <h2 style="color:#00FF00; font-family: 'Orbitron', sans-serif; text-shadow: 0 0 8px #00FF00;">
+    ✅ Recommended Portfolio Allocation
+    </h2>
+    """,
+    unsafe_allow_html=True
+    )
 
     final_weights = result["Weights"].sort_values(ascending=False)
     weights_percent = (final_weights * 100).round(2)
