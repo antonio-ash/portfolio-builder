@@ -6,10 +6,12 @@ import numpy as np
 st.markdown(
     """
     <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
     html, body, .stApp {
         background-color: black !important;
         color: #00FF00 !important;
-        font-family: 'Georgia', serif;
+        font-family: 'Orbitron', sans-serif !important;
     }
 
     .stButton > button {
@@ -34,27 +36,6 @@ st.markdown(
 
     div[data-baseweb="slider"] > div:nth-child(2) {
         background: #003300 !important;
-    }
-
-    div[data-baseweb="slider"] span[role="slider"] {
-        background-color: #00FF00 !important;
-        border: 2px solid #00FF00 !important;
-    }
-
-    .stMarkdown p, .stTable td, .stTable th {
-        color: #00FF00 !important;
-        background-color: black !important;
-        text-align: center !important;
-    }
-
-    table td, table th {
-        color: #00FF00 !important;
-        background-color: black !important;
-        text-align: center !important;
-    }
-
-    #MainMenu, footer {
-        visibility: hidden;
     }
     </style>
     """,
