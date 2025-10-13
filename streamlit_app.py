@@ -61,11 +61,6 @@ thead tr th, tbody tr td {
     div[data-baseweb="slider"] > div:nth-child(2) {
         background: #003300 !important;
     }
-    .stDataFrame tbody td {
-    color: #00FF00 !important;
-    font-family: 'Orbitron', sans-serif !important;
-    }
-    </style>
     """,
     unsafe_allow_html=True
 )
