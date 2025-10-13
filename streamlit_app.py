@@ -79,13 +79,13 @@ annualized_cov_matrix = returns_df.cov() * 12
 # Step 1: Certainty Equivalent
 st.markdown(
     """
-    💬 <span style='color:#00FF00'>
+    💬 <span style="color:#00FF00; font-family: 'Orbitron', sans-serif;">
     You hold a lottery ticket that gives you:<br>
     📄 50% chance of winning <strong>€1000</strong><br>
     📄 50% chance of winning <strong>€0</strong><br>
     </span>
     <br>
-    <span style='color:#00FF00'>How much would you sell it for? (€)</span>
+    <span style="color:#00FF00; font-family: 'Orbitron', sans-serif;">How much would you sell it for? (€)</span>
     """,
     unsafe_allow_html=True
 )
