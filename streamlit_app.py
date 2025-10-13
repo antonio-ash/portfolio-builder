@@ -188,9 +188,18 @@ if st.button("Generate Portfolio") or "result" in st.session_state:
 
     expected_return = result['Expected Return']
     volatility = result['Volatility']
-
-    st.markdown(f"**📈 Expected Return:** `{expected_return * 100:.2f}%`")
-    st.markdown(f"**📉 Volatility:** `{volatility * 100:.2f}%`")
+    
+    st.markdown(
+    f"""
+    📈 <span style='color:#00FF00; font-family: Orbitron, sans-serif;'>
+    <strong>Expected Return:</strong> {expected_return * 100:.2f}%
+    </span><br>
+    📉 <span style='color:#00FF00; font-family: Orbitron, sans-serif;'>
+    <strong>Volatility:</strong> {volatility * 100:.2f}%
+    </span>
+    """,
+    unsafe_allow_html=True
+)
 
     # Step 5: Investment projection
     st.markdown("💰 <span style='color:#00FF00'>How much would you like to invest? (€)</span>", unsafe_allow_html=True)
