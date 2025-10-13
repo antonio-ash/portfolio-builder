@@ -217,10 +217,9 @@ if st.button("Generate Portfolio") or "result" in st.session_state:
     st.markdown(html_table, unsafe_allow_html=True)
 
 
-expected_return = result['Expected Return']
-volatility = result['Volatility']
-    
-st.markdown(
+    expected_return = result['Expected Return']
+    volatility = result['Volatility']
+    st.markdown(
     f"""
     📈 <span style='color:#00FF00; font-family: Orbitron, sans-serif;'>
     <strong>Expected Return:</strong> {expected_return * 100:.2f}%
