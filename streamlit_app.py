@@ -184,7 +184,9 @@ if st.button("Generate Portfolio") or "result" in st.session_state:
         "Company": [ticker_name_map.get(t, "Unknown") for t in final_weights.index],
         "Ticker": final_weights.index,
         "Allocation (%)": ["{:.2f}%".format(w) for w in weights_percent.values]
-    }).set_index("Ticker")
+    })
+    weights_named = weights_named.set_index("Ticker")
+    weights_named.index.name = "Ticker" 
     weights_named.index.name = "Ticker"
 
     st.table(weights_named)
