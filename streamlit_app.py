@@ -208,9 +208,16 @@ if st.button("Generate Portfolio") or "result" in st.session_state:
     upper_bound = investment * np.exp(mu + sigma)
 
     st.markdown(
-        f"📊 Over 5 years, your investment could grow to **€{future_value:,.0f}**, "
-        f"assuming the portfolio performs in line with historical trends."
-    )
+    f"""
+    📊 <span style='color:#00FF00; font-family: Orbitron, sans-serif;'>
+    Over 5 years, your investment could grow to <strong>€{future_value:,.0f}</strong>
+    </span><br>
+    📉 <span style='color:#00FF00; font-family: Orbitron, sans-serif;'>
+    Expected yearly range: <strong>€{lower_bound:,.0f} – €{upper_bound:,.0f}</strong>
+    </span>
+    """,
+    unsafe_allow_html=True
+)
 
     st.markdown(
         f"<span style='color:#00FF00'>💡 In a typical year, your €{investment:,.0f} investment could fluctuate between "
