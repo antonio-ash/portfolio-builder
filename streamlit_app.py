@@ -69,7 +69,7 @@ st.markdown(
 )
 
 st.markdown(
-    "<h1 style='color:#00FF00; font-family: 'Orbitron', serif;'>Generate My Portfolio</h1>",
+    "<h1 style='color:#00FF00; font-family: 'Orbitron', serif;'>Generate My Stock Portfolio</h1>",
     unsafe_allow_html=True
 )
 
