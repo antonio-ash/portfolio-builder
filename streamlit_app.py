@@ -225,7 +225,7 @@ if st.button("Generate Portfolio") or "result" in st.session_state:
         Over 5 years, your investment could grow to <strong>€{future_value:,.0f}</strong>
         </span><br>
         📉 <span style='color:#00FF00; font-family: Orbitron, sans-serif;'>
-        Expected yearly range: <strong>€{lower_bound:,.0f} – €{upper_bound:,.0f}</strong>
+        Expected first year range: <strong>€{lower_bound:,.0f} – €{upper_bound:,.0f}</strong>
         </span>
         """,
         unsafe_allow_html=True
